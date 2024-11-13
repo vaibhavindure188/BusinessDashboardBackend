@@ -8,10 +8,10 @@ const orders  = require('./routes/route.orders')
 
 const app = express();
 app.use(express.json());
-// const path = require('path')
-// const _dirname = path.dirname("");
-// const buildpath = path.join(_dirname, "../travel-frontend/build");
-// app.use(express.static(buildpath));
+const path = require('path')
+const _dirname = path.dirname("");
+const buildpath = path.join(_dirname, "../ReactDashboard/ReactDashBoardForBusiness/build");
+app.use(express.static(buildpath));
 app.use(cors({
   "origin" : "*"
 }));
