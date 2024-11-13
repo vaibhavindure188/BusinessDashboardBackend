@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 const path = require('path')
 const _dirname = path.dirname("");
-const buildpath = path.join(_dirname, "../ReactDashboard/ReactDashBoardForBusiness/build");
+const buildpath = path.join(_dirname, "../ReactDashBoardForBusiness/build");
 app.use(express.static(buildpath));
 app.use(cors({
   "origin" : "*"
