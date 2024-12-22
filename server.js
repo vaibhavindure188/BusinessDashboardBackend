@@ -38,7 +38,7 @@ app.use('/api/orders', orders);
 
 try{
   app.listen(process.env.PORT || 8000 , () => {
-    console.log("Server is Up and Running" );
+    console.log("Server is Up and Running on 8000" );
   });
 }
 catch(e){
